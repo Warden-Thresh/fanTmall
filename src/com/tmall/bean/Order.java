@@ -26,6 +26,7 @@ public class Order {
         switch (status) {
 
         }
+        return null;
     }
 
     public String getOrderCode() {
