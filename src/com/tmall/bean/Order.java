@@ -7,7 +7,7 @@ public class Order {
     private String orderCode;
     private String address;
     private String post;
-    private String reveiver;
+    private String receiver;
     private String mobile;
     private String userMessage;
     private Date createDate;
@@ -52,12 +52,12 @@ public class Order {
         this.post = post;
     }
 
-    public String getReveiver() {
-        return reveiver;
+    public String getReceiver() {
+        return receiver;
     }
 
-    public void setReveiver(String reveiver) {
-        this.reveiver = reveiver;
+    public void setReceiver(String receiver) {
+        this.receiver = receiver;
     }
 
     public String getMobile() {
