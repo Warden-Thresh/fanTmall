@@ -1,6 +1,6 @@
 package com.tmall.bean;
 
-public class ProperyValue {
+public class PropertyValue {
     private String value;
     private Product product;
     private Property property;
