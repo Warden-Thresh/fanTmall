@@ -1,6 +1,5 @@
-package com.tmall.Dao;
+package com.tmall.dao;
 
-import com.sun.org.apache.regexp.internal.RE;
 import com.tmall.bean.Product;
 import com.tmall.bean.Review;
 import com.tmall.bean.User;

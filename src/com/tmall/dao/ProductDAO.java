@@ -1,9 +1,8 @@
-package com.tmall.Dao;
+package com.tmall.dao;
 
 import com.tmall.bean.Category;
 import com.tmall.bean.Product;
 import com.tmall.bean.ProductImage;
-import com.tmall.bean.Review;
 import com.tmall.util.DBUtil;
 import com.tmall.util.DateUtil;
 
@@ -183,6 +182,7 @@ public class ProductDAO {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        return beans;
     }
 
     public void fill(List<Category> categoryList) {
@@ -219,10 +219,10 @@ public class ProductDAO {
      }
 
     public void setSaleAndReviewNumber(Product p) {
-        int saleCount = new OrderItemDao().getSaleCount(p.getId());
+        int saleCount = new OrderItemDAO().getSaleCount(p.getId());
         p.setSaleCount(saleCount);
 
-        int reviewCount = new ReviewDao().getCount(p.getId());
+        int reviewCount = new ReviewDAO().getCount(p.getId());
         p.setReviewCount(reviewCount);
     }
 

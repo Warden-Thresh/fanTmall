@@ -1,4 +1,4 @@
-package com.tmall.Dao;
+package com.tmall.dao;
 
 import com.tmall.bean.User;
 import com.tmall.util.DBUtil;

@@ -1,4 +1,4 @@
-package com.tmall.Dao;
+package com.tmall.dao;
 
 import com.tmall.bean.Category;
 import com.tmall.bean.Property;
