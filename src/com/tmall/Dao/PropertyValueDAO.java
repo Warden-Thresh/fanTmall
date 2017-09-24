@@ -75,7 +75,7 @@ public class PropertyValueDAO {
                 int ptid = rs.getInt("ptid");
                 String value = rs.getString("value");
 
-                Product product = new ProductDAO.get(pid);
+                Product product = new ProductDAO().get(id);
                 Property property = new PropertyDAO().get(ptid);
                 bean.setId(id);
                 bean.setValue(value);

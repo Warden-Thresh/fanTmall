@@ -9,6 +9,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ProductImageDAO {
+    public static final String type_single = "type_single";
+    public static final String type_detail = "type_detail";
+
     public int getTotal() {
         int total = 0;
         try (Connection c = DBUtil.getConnection(); Statement s = c.createStatement()) {
@@ -61,7 +64,7 @@ public class ProductImageDAO {
             if (rs.next()) {
                 int pid = rs.getInt("pid");
                 String type = rs.getString("type");
-                Product product = new ProductDAO.get(pid);
+                Product product = new ProductDAO().get(pid);
                 bean.setProduct(product);
                 bean.setType(type);
                 bean.setId(id);
